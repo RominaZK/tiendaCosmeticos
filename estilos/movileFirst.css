@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,500;1,400&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;1,200&family=Ubuntu:wght@300&display=swap');
+
+/*Movile first*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    font-size: large;
+    justify-content: center;
+}
+header, h2 {
+    color: black;
+}
+
+nav {
+    height: 100%;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    padding: 0.5rem;
+    background-color: #cc8b86;
+    margin-bottom: 1.5rem;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    background-color: #cc8b86;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 10rem;
+    font-size: 2rem;
+    word-spacing: 0.5rem;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1.5rem;
+    border: 0.5rem;
+}
+li {
+    display: inline-block;
+}
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 0.5rem;
+}
+article {
+    align-tracks: right;
+}
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    color: black;
+    margin: 1rem 4rem;
+    padding: 1rem;
+    border: 0.5rem;
+}
+p {
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer { 
+    padding: 2rem;
+    background-color: #aa998f;
+    margin-top: 1.5rem;
+}
+.Header__usuario__iconos {
+    height: 3rem
+}
+.logo__usuario__grid{
+    min-width: 100%;
+    margin-bottom: 1.5rem;
+    display: grid;
+}
+
+.Header__logo__img{
+    height: 30%;
+}
+.Redes{
+    margin-left: 0.5fr;
+    margin-bottom: 1.5rem;
+    padding: 0rem 0.2fr;
+    border: 0.4rem solid #7d4f50;
+}
+.Redes__iconos {
+    height: 2rem;
+}
+.Home__footer{
+    height: 100%;
+}
+.Productos__flex{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Productos__imagen {
+    height: 20rem;
+    width: 20rem;
+}
+
+.contacto {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+}
+.Form {
+    background-color: #d1be9c;
+    padding: 4rem;
+    margin-left: 5rem;
+    margin-right: 45rem;
+    margin-bottom: 8rem;
+}
+
+.Recetas{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Etiquetas grid*/
+
+.logo__usuario__grid{
+    grid-area: Logo__usuario;
+}
+nav {
+    grid-area: Nav;
+}
+.Redes__grid{
+    grid-area: Redes__grid;
+}
+.Redes{
+    grid-area: Redes;
+}
+.Buscador{
+    grid-area: Buscador;
+}
+.Home__portada__grid{
+    grid-area: Portada;
+}
+.Home__Novedades{
+    grid-area: Novedades;
+    background-color: #d1be9c;
+}
+.Home__Ofertas{
+    grid-area: Ofertas;
+    background-color: #d1be9c;
+}
+.Home__Destacados{
+    grid-area: Destacados;
+    background-color: #d1be9c;
+}
+.Home__Publicidad{
+    grid-area: Publicidad;
+}
+footer {
+    grid-area: Footer;
+}
+
+/*Grilla*/
+.Home__grid{
+    margin: 1.5rem 0rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "Logo__usuario"
+    "Nav"
+    "Redes__grid"
+    "Portada"
+    "Publicidad"
+    "Footer";
+}
+.Redes__grid{
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-areas: 
+    "Redes"
+    "Buscador";
+    gap:20%;
+    justify-items: center;
+}
+.logo__usuario__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50%;
+    justify-items: center;
+}
+
+/*Media query*/
+@media screen and (min-widht:500px){
+    .Home__grid{
+        margin: 1.5rem 0rem;;
+        grid-template-areas: 
+        "Logo__usuario Logo__usuario"
+        "Nav Nav"
+        "Redes__grid Redes__grid"
+        "Portada Publicidad"
+        "Footer Footer";
+    }
+    .logo__usuario__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 45%;
+    }
+    .Redes__grid{
+        display: grid;
+        grid-template-areas: 
+            "Buscador Redes ";
+        gap: 45%;
+    }
+    }
+
+@media screen and (min-with:768px) {
+    .Home__grid{
+        margin: 1.5rem 0rem;
+        grid-template-areas: 
+        "Logo__usuario Logo__usuario"
+        "Nav Nav"
+        "Redes__grid Redes__grid"
+        "Portada Publicidad"
+        "Footer Footer";
+    }
+    .logo__usuario__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 45%;
+    }
+    .Redes__grid{
+        display: grid;
+        grid-template-areas: 
+        "Buscador Redes ";
+        gap: 45%;
+    }
+    }
