@@ -241,6 +241,35 @@ footer {
 .Carrito__iconos{
     height: 7%;
 }
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form label {
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+label {
+    color: grey;
+}
+.calificación{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+input[type="radio"]:checked ~ label {
+    color: orange;
+}
 .Home__Recetas__grid{
     height: 100%;
     width: 100%;
@@ -427,6 +456,33 @@ footer{
     row-gap: 2%;
     justify-items: center;
 }
+
+/*Transiciones, transformaciones y animaciones*/
+
+.Header__usuario__iconos:hover{
+    transform: scale(1.2);
+}
+nav, li:hover{
+        transform: scale(1.5);
+}
+.Redes__iconos:hover{
+    transform: scale(1.2);
+}
+.Home__Noticias__img:hover{
+    transform: scale(1.2);
+    transition: 2s transform;
+}
+.Header__logo__img:hover{
+    transform: scale(1.2);
+}
+.Productos__imagen:hover{
+    opacity: 0.5;
+}
+label:hover,
+label:hover ~ label {
+    color: orange;
+}
+
 /*Media query*/
 
 @media screen and (min-width: 500px){
@@ -445,8 +501,8 @@ footer{
         justify-content: center;
     }
     nav, li{
-        font-size: 85%;
-        padding: 2% 5%;
+        font-size: 79%;
+        padding: 2% 3%;
         width: 100%;
     }
     .Home__portada__grid{
@@ -513,8 +569,8 @@ footer{
         justify-content: center;
     }
     nav, li{
-        font-size: 100%;
-        padding: 2% 6%;
+        font-size: 80%;
+        padding: 0% 6%;
         width: 100%;
     }
     .Home__grid {
