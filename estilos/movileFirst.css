@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,500;1,400&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;1,200&family=Ubuntu:wght@300&display=swap');
+html {
+    font-size: 62.5%;
+}
 
 /*Movile first*/
+
 * {
     margin: 0;
     padding: 0;
@@ -12,9 +16,12 @@ body{
     font-weight: bolder;
     display:flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 header{
+    width: 100%;
+    height: 100%;
     font-size: large;
     justify-content: center;
 }
@@ -24,48 +31,45 @@ header, h2 {
 
 nav {
     height: 100%;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    padding: 0.5rem;
+    width: 100%;
     background-color: #cc8b86;
-    margin-bottom: 1.5rem;
+    margin-bottom: 20%;
 }
 ul {
-    list-style-type: none;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 a {
-    background-color: #cc8b86;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 10rem;
-    font-size: 2rem;
-    word-spacing: 0.5rem;
     text-decoration: none;
     color: black;
-    padding: 0.5rem 1.5rem;
-    border: 0.5rem;
 }
 li {
-    display: inline-block;
+    list-style: none;
+    text-align: center;
+    font-size: 100%;
+    font-weight: auto;
+    word-spacing: 20%;
+    background-color: #cc8b86;
+    font-family: 'Ubuntu', sans-serif;
 }
 h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.5rem;
+    font-size: 100%;
     text-align: center;
     color: black;
-    padding: 0.5rem;
-    margin: 1rem;
-    border: 0.5rem;
 }
 article {
-    align-tracks: right;
+    max-width: 100%;
+    max-height: 100%;
 }
 h2 {
     font-family: 'Ubuntu', sans-serif;
     text-align: left;
     color: black;
-    margin: 1rem 4rem;
-    padding: 1rem;
-    border: 0.5rem;
+    font-size: 100%;
+    font-weight: auto;
 }
 p {
     font-family: 'Ubuntu', sans-serif;
@@ -74,36 +78,150 @@ p {
 img {
     max-width: 100%;
     max-height: 100%;
+    object-fit: contain;
+}
+main{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+section{
+    height: 100%;
+    width: 100%;
+}
+footer { 
+    padding: 10% 0%;
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: #aa998f;
+    background-image: linear-gradient(to bottom,#aa998f, white );
 }
 
-footer { 
-    padding: 2rem;
-    background-color: #aa998f;
-    margin-top: 1.5rem;
+.Header__usuario{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .Header__usuario__iconos {
-    height: 3rem
+    height: 15%;
 }
 .logo__usuario__grid{
-    min-width: 100%;
-    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
     display: grid;
 }
 
 .Header__logo__img{
-    height: 30%;
+    height: 35%;
 }
+
 .Redes{
-    margin-left: 0.5fr;
-    margin-bottom: 1.5rem;
-    padding: 0rem 0.2fr;
+    padding: 0%;
     border: 0.4rem solid #7d4f50;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80%;
 }
 .Redes__iconos {
-    height: 2rem;
-}
-.Home__footer{
     height: 100%;
+}
+.Home__portada__grid{
+    height: 100%;
+    width: 100%;
+}
+
+.Redes__grid{
+    width: 100%;
+    height: 100%;
+}
+.Home__Noticias{
+    width: 100%;
+    height: 100%;
+}
+.Home__Noticias__img{
+    width: auto; 
+    height: 70%;
+}
+.Home__Novedades{
+    width: 100%;
+    height: 100%;
+    background-color: #d1be9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Home__Ofertas{
+    width: 100%;
+    height: 100%;
+    background-color: #d1be9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Home__Destacados{
+    width: 100%;
+    height: 100%;
+    background-color: #d1be9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Home__Publicidad{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Publicidad__img{
+    width: auto; 
+    height: 63%;
+}
+
+.Footer__contactos__flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Footer__políticas__flex{
+    height: 100%;
+    width: 100%;
+    font-size: 90%;
+    font-weight: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Footer__políticas__flex, h3 {
+        padding: 2% 0%;
+}
+.Footer__texto{
+    width: 60%;
+    height: 100%;
+    padding: 2% 0%;
+}
+.Footer__img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.Home__productos__grid{
+    height: 100%;
+    width: 100%;
 }
 .Productos__flex{
     padding: 2rem;
@@ -111,11 +229,46 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+.Productos__grid{
+    width: 70%;
+    height: 10%;
+    margin-bottom: 10%;
+}
 .Productos__imagen {
-    height: 20rem;
-    width: 20rem;
+    height: auto;
+    width: 60%;
+}
+.Carrito__iconos{
+    height: 7%;
+}
+.Home__Recetas__grid{
+    height: 100%;
+    width: 100%;
+}
+.Recetas__envoltorio{
+    width: 75%;
+    height: 100%;
+}
+.Recetas__título{
+    width: 100%;
+    height: 2%;
+    font-size: 100%;
+    padding: 4% 0%;
 }
 
+.Recetas__grid{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10%;
+}
+.Recetas{
+    width: 90%;
+    height: 90%;
+}
+.Receta__iframe{
+    width: 100%;
+    height: 100%;
+}
 .contacto {
     background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
@@ -127,14 +280,6 @@ footer {
     margin-right: 45rem;
     margin-bottom: 8rem;
 }
-
-.Recetas{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 /*Etiquetas grid*/
 
 .logo__usuario__grid{
@@ -142,6 +287,9 @@ footer {
 }
 nav {
     grid-area: Nav;
+}
+.Home__portada__grid{
+    grid-area: Portada;
 }
 .Redes__grid{
     grid-area: Redes__grid;
@@ -152,20 +300,17 @@ nav {
 .Buscador{
     grid-area: Buscador;
 }
-.Home__portada__grid{
-    grid-area: Portada;
+.Home__Noticias{
+    grid-area: Noticias;
 }
 .Home__Novedades{
     grid-area: Novedades;
-    background-color: #d1be9c;
 }
 .Home__Ofertas{
     grid-area: Ofertas;
-    background-color: #d1be9c;
 }
 .Home__Destacados{
     grid-area: Destacados;
-    background-color: #d1be9c;
 }
 .Home__Publicidad{
     grid-area: Publicidad;
@@ -173,29 +318,30 @@ nav {
 footer {
     grid-area: Footer;
 }
+.Footer__contactos__flex{
+    grid-area: Contactos;
+}
+.Footer__políticas__flex{
+    grid-area: Políticas;
+}
+.Productos__grid{
+    grid-area: Productos__grid;
+}
+.Recetas__envoltorio{
+    grid-area: Recetas__envoltorio;
+}
+/*Grillas*/
 
-/*Grilla*/
 .Home__grid{
     margin: 1.5rem 0rem;
     display: grid;
     grid-template-columns: 100%;
+    grid-template-rows: 40% 30%;
     grid-template-areas: 
     "Logo__usuario"
-    "Nav"
-    "Redes__grid"
-    "Portada"
-    "Publicidad"
-    "Footer";
+    "Nav";
 }
-.Redes__grid{
-    margin-bottom: 1.5rem;
-    display: grid;
-    grid-template-areas: 
-    "Redes"
-    "Buscador";
-    gap:20%;
-    justify-items: center;
-}
+
 .logo__usuario__grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -203,52 +349,257 @@ footer {
     gap: 50%;
     justify-items: center;
 }
-
+.Home__portada__grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas: 
+    "Redes__grid"
+    "Noticias";
+    row-gap: 2%;
+    justify-items: center;
+}
+.Redes__grid{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "Redes"
+    "Buscador";
+    align-content: space-evenly;
+    justify-items: center;
+}
+.Home__Noticias{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+    "Novedades"
+    "Ofertas"
+    "Destacados"
+    "Publicidad";
+    row-gap: 2%;
+    align-content: space-evenly;
+    justify-items: center;
+}
+footer{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    row-gap: 12%;
+    grid-template-areas: 
+    "Políticas"   
+    "Contactos";
+    justify-items: center;
+    align-items: center;
+    align-content: space-around;
+}
+.Home__productos__grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "Redes__grid"
+    "Productos__grid";
+    row-gap: 2%;
+    justify-items: center;
+}
+.Productos__grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 2%;
+    justify-items: center;
+}
+.Home__Recetas__grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "Redes__grid"
+    "Recetas__envoltorio";
+    row-gap: 1%;
+    justify-items: center;
+}
+.Recetas__grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 2%;
+    justify-items: center;
+}
 /*Media query*/
-@media screen and (min-widht:500px){
-    .Home__grid{
-        margin: 1.5rem 0rem;;
-        grid-template-areas: 
-        "Logo__usuario Logo__usuario"
-        "Nav Nav"
-        "Redes__grid Redes__grid"
-        "Portada Publicidad"
-        "Footer Footer";
+
+@media screen and (min-width: 500px){
+    
+    .logo__usuario__grid {
+        gap: 68%;
     }
-    .logo__usuario__grid{
+    nav{
+        margin-bottom: 10%;
+    }
+    nav, ul {
+        height: 60%;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    nav, li{
+        font-size: 85%;
+        padding: 2% 5%;
+        width: 100%;
+    }
+    .Home__portada__grid{
+        row-gap: 1%;
+    }
+    footer{
+        margin: 0%;
+    }
+    .Footer__políticas__flex {
+        height: 100%;
+        width: 100%;
+        font-size: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .Footer__texto {
+        width: 100%;
+        height: 100%;
+        padding: 2% 7%;
+    }
+    .Home__productos__grid{
+        row-gap: 5%;
+    }
+    .Productos__grid{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 45%;
+        grid-template-columns: 50% 50%;
+        row-gap: 20%;
+        column-gap: 15%;
+        justify-items: center;
+        align-items: end;
+        justify-content: center;
     }
-    .Redes__grid{
-        display: grid;
-        grid-template-areas: 
-            "Buscador Redes ";
-        gap: 45%;
+    .Productos__imagen {
+        height: auto;
+        width: 100%;
     }
+    .Home__Recetas__grid{
+        row-gap: 2%;
+        grid-template-rows: 15% 85% ;
+    }
+    .Recetas__grid{
+        grid-template-columns: 50% 50% ;
+        row-gap: 20%;
+        column-gap: 4%;
+    }
+    .Recetas{
+        width: 100%;
+        height: 100%;
     }
 
-@media screen and (min-with:768px) {
-    .Home__grid{
-        margin: 1.5rem 0rem;
-        grid-template-areas: 
-        "Logo__usuario Logo__usuario"
-        "Nav Nav"
-        "Redes__grid Redes__grid"
-        "Portada Publicidad"
-        "Footer Footer";
+}
+@media screen and (min-width: 768px){
+    
+    
+    nav{
+        margin-bottom: 10%;
     }
-    .logo__usuario__grid{
+    nav, ul {
+        height: 60%;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    nav, li{
+        font-size: 100%;
+        padding: 2% 6%;
+        width: 100%;
+    }
+    .Home__grid {
+        grid-template-rows: 60% 30%;
+    }
+    .Home__portada__grid {
+        grid-template-rows: 10% 90%;
+        row-gap: 0%;
+        justify-items: center;
+        margin: 0% 2%;
+    }
+    
+    footer{
+        margin: 0%;
+    }
+    .Footer__políticas__flex {
+        height: 100%;
+        width: 100%;
+        font-size: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .Footer__texto {
+        width: 100%;
+        height: 100%;
+        padding: 2% 7%;
+    }
+    .Home__productos__grid{
+        row-gap: 8%;
+        grid-template-rows: 20% 80% ;
+    }
+    .Home__Noticias{
+        display:grid;
+        grid-template-columns: 60% 30%;
+        grid-template-rows: 30% 30% 30% ;
+        grid-template-areas:
+        "Novedades  Publicidad"
+        "Ofertas  Publicidad"
+        "Destacados  Publicidad";
+        row-gap: 2%;
+        column-gap: 4%;
+        align-content: space-evenly;
+        justify-items: center;
+    }
+    .Publicidad__img{
+        width: auto; 
+        height: 80%;
+    }
+    .Home__Publicidad{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .Productos__grid{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 45%;
+        grid-template-columns: 30% 30% 30%;
+        row-gap: 70%;
+        column-gap: 10%;
+        justify-items: center;
+        align-items: end;
     }
-    .Redes__grid{
-        display: grid;
-        grid-template-areas: 
-        "Buscador Redes ";
-        gap: 45%;
+    .Productos__imagen {
+        height: auto;
+        width: 100%;
     }
+    .Home__Recetas__grid{
+        row-gap: 2%;
+        grid-template-rows: 20% 80% ;
     }
+    .Recetas__envoltorio {
+        width: 95%;
+        height: 100%;
+    }
+    .Recetas__grid{
+        grid-template-columns: 30% 30% 30%;
+        row-gap: 32%;
+        column-gap: 4%;
+    }
+    .Recetas{
+        width: 100%;
+        height: 100%;
+    }
+
+}
