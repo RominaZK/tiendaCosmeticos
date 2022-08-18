@@ -24,37 +24,25 @@ header{
     height: 100%;
     font-size: large;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 header, h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+    text-align: center;
     color: black;
 }
 
-nav {
-    height: 100%;
-    width: 100%;
-    background-color: #cc8b86;
-    margin-bottom: 20%;
-}
-ul {
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-a {
-    text-decoration: none;
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+    font-weight: 200;
+    text-align: center;
     color: black;
 }
-li {
-    list-style: none;
-    text-align: center;
-    font-size: 100%;
-    font-weight: auto;
-    word-spacing: 20%;
-    background-color: #cc8b86;
-    font-family: 'Ubuntu', sans-serif;
-}
-h1 {
+a{
     font-family: 'Ubuntu', sans-serif;
     font-size: 100%;
     text-align: center;
@@ -68,7 +56,7 @@ h2 {
     font-family: 'Ubuntu', sans-serif;
     text-align: left;
     color: black;
-    font-size: 100%;
+    font-size: 2rem;
     font-weight: auto;
 }
 p {
@@ -84,7 +72,7 @@ main{
     width: 100%;
     height: 100%;
     justify-content: center;
-    margin-bottom: 10%;
+    margin: 2rem 0rem;
 }
 section{
     height: 100%;
@@ -102,32 +90,113 @@ footer {
 
 .Header__usuario{
     height: 100%;
-    width: 100%;
+    width: 5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 .Header__usuario__iconos {
-    height: 15%;
+    height: 3rem;
 }
-.logo__usuario__grid{
-    width: 100%;
+header{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+.logo__usuario__flex{
+    width: 96%;
     height: 100%;
     margin-bottom: 10%;
-    display: grid;
+    margin: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
 .Header__logo__img{
-    height: 35%;
+    height: 6rem;
+    margin: 0rem 0.5rem;
 }
 
+/*Booststrap*/
+
+.container-fluid{
+    background-color: #cc8b86;
+    padding: 1rem 1rem;
+}
+.navbar{
+    width: 100%;
+}
+.d-flex {
+    width: 25rem;
+    font-size: 1.5rem;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 0rem;
+    color: black;
+    font-size: 155%;
+}
+.me-auto {
+    margin-right: 0rem;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+/*Buscador*/
+
+.form-control {
+    font-size: 2rem;
+}
+.btn {
+    display: inline-block;
+    font-weight: 100;
+    line-height: 1.5;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #7d4f50;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.5rem;
+    background-color: #cc8b86;
+    border-radius: 0.25rem;
+}
+/**/
 .Redes{
     padding: 0%;
     border: 0.4rem solid #7d4f50;
     display:flex;
     flex-direction: row;
     justify-content: center;
-    height: 80%;
+    height: 4rem;
+    width: 18rem;
 }
 .Redes__iconos {
     height: 100%;
@@ -136,10 +205,14 @@ footer {
     height: 100%;
     width: 100%;
 }
-
 .Redes__grid{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .Home__Noticias{
     width: 100%;
@@ -180,13 +253,13 @@ footer {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 .Publicidad__img{
     width: auto; 
-    height: 63%;
+    height: 40rem;
 }
 
 .Footer__contactos__flex{
@@ -219,20 +292,17 @@ footer {
     max-height: 100%;
     object-fit: contain;
 }
-.Home__productos__grid{
-    height: 100%;
+.Productos__grid{
     width: 100%;
+    height: 10%;
+    margin-bottom: 10%;
 }
 .Productos__flex{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.Productos__grid{
     width: 70%;
     height: 10%;
     margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
 }
 .Productos__imagen {
     height: auto;
@@ -275,14 +345,15 @@ input[type="radio"]:checked ~ label {
     width: 100%;
 }
 .Recetas__envoltorio{
-    width: 75%;
+    width: 95%;
     height: 100%;
+    margin: 1rem 1rem;
 }
 .Recetas__título{
     width: 100%;
     height: 2%;
-    font-size: 100%;
-    padding: 4% 0%;
+    font-size: 2rem;
+    margin-bottom: 20%;
 }
 
 .Recetas__grid{
@@ -300,22 +371,24 @@ input[type="radio"]:checked ~ label {
 }
 .contacto {
     background-image: url(../img/fondo.jpg);
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem;
 }
 .Form {
     background-color: #d1be9c;
-    padding: 4rem;
-    margin-left: 5rem;
-    margin-right: 45rem;
-    margin-bottom: 8rem;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*Etiquetas grid*/
 
 .logo__usuario__grid{
     grid-area: Logo__usuario;
-}
-nav {
-    grid-area: Nav;
 }
 .Home__portada__grid{
     grid-area: Portada;
@@ -356,28 +429,17 @@ footer {
 .Productos__grid{
     grid-area: Productos__grid;
 }
+.Productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 .Recetas__envoltorio{
     grid-area: Recetas__envoltorio;
 }
 /*Grillas*/
 
-.Home__grid{
-    margin: 1.5rem 0rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 40% 30%;
-    grid-template-areas: 
-    "Logo__usuario"
-    "Nav";
-}
-
-.logo__usuario__grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 50%;
-    justify-items: center;
-}
 .Home__portada__grid{
     display: grid;
     grid-template-columns: 100%;
@@ -388,14 +450,10 @@ footer {
     row-gap: 2%;
     justify-items: center;
 }
-.Redes__grid{
-    display:grid;
-    grid-template-columns: 100%;
-    grid-template-areas:
-    "Redes"
-    "Buscador";
-    align-content: space-evenly;
-    justify-items: center;
+.Redes__grid {
+    width: 22%;
+    height: 38%;
+    margin: 2rem 0rem;
 }
 .Home__Noticias{
     display:grid;
@@ -425,7 +483,7 @@ footer{
 .Home__productos__grid{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 6% 98%;
     grid-template-areas: 
     "Redes__grid"
     "Productos__grid";
@@ -434,8 +492,7 @@ footer{
 }
 .Productos__grid{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
     row-gap: 2%;
     justify-items: center;
 }
@@ -453,17 +510,18 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    row-gap: 2%;
     justify-items: center;
 }
+
+
 
 /*Transiciones, transformaciones y animaciones*/
 
 .Header__usuario__iconos:hover{
     transform: scale(1.2);
 }
-nav, li:hover{
-        transform: scale(1.5);
+.nav-item:hover{
+    transform: scale(1.2)
 }
 .Redes__iconos:hover{
     transform: scale(1.2);
@@ -490,21 +548,6 @@ label:hover ~ label {
     .logo__usuario__grid {
         gap: 68%;
     }
-    nav{
-        margin-bottom: 10%;
-    }
-    nav, ul {
-        height: 60%;
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    nav, li{
-        font-size: 79%;
-        padding: 2% 3%;
-        width: 100%;
-    }
     .Home__portada__grid{
         row-gap: 1%;
     }
@@ -525,54 +568,63 @@ label:hover ~ label {
         padding: 2% 7%;
     }
     .Home__productos__grid{
-        row-gap: 5%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 3% 97%;: 
+        row-gap: 2%;
+        justify-items: center;
+        height: 80%;
+    }
+    .Redes__grid{
+        width: 40%;
     }
     .Productos__grid{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        row-gap: 20%;
-        column-gap: 15%;
-        justify-items: center;
-        align-items: end;
-        justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 2%;
+    column-gap: 15%;
+    justify-items: center;
+    align-items: start;
+    justify-content: center;
+    align-content: space-between;
+    }
+    .Productos{
+        height: 40%;
     }
     .Productos__imagen {
-        height: auto;
-        width: 100%;
+        height: 50rem;
     }
     .Home__Recetas__grid{
         row-gap: 2%;
         grid-template-rows: 15% 85% ;
     }
     .Recetas__grid{
-        grid-template-columns: 50% 50% ;
-        row-gap: 20%;
-        column-gap: 4%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 2%;
+        column-gap: 2%;
+        justify-items: center;
+        align-items: start;
+        justify-content: center;
+        align-content: space-between;
     }
+    
     .Recetas{
-        width: 100%;
+        width: 85%;
         height: 100%;
     }
-
+    .contacto {
+        background-image: url(../img/fondo.jpg);
+        width: 74%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem 10rem;
+    }
 }
 @media screen and (min-width: 768px){
     
-    
-    nav{
-        margin-bottom: 10%;
-    }
-    nav, ul {
-        height: 60%;
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    nav, li{
-        font-size: 80%;
-        padding: 0% 6%;
-        width: 100%;
-    }
     .Home__grid {
         grid-template-rows: 60% 30%;
     }
@@ -580,7 +632,7 @@ label:hover ~ label {
         grid-template-rows: 10% 90%;
         row-gap: 0%;
         justify-items: center;
-        margin: 0% 2%;
+        margin: 0% 0%;
     }
     
     footer{
@@ -598,11 +650,7 @@ label:hover ~ label {
         width: 100%;
         height: 100%;
         padding: 2% 7%;
-    }
-    .Home__productos__grid{
-        row-gap: 8%;
-        grid-template-rows: 20% 80% ;
-    }
+    } 
     .Home__Noticias{
         display:grid;
         grid-template-columns: 60% 30%;
@@ -612,13 +660,13 @@ label:hover ~ label {
         "Ofertas  Publicidad"
         "Destacados  Publicidad";
         row-gap: 2%;
-        column-gap: 4%;
+        column-gap: 0rem;    
         align-content: space-evenly;
         justify-items: center;
+        justify-content: space-around;
     }
-    .Publicidad__img{
-        width: auto; 
-        height: 80%;
+    .Publicidad__img{ 
+        height: 40rem;
     }
     .Home__Publicidad{
         width: 100%;
@@ -628,13 +676,19 @@ label:hover ~ label {
         align-items: center;
         justify-content: space-around;
     }
+    .Home__productos__grid{
+        grid-template-rows: 10% 90%;
+        justify-items: center;
+        height: 100%;
+    }
     .Productos__grid{
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        row-gap: 70%;
         column-gap: 10%;
         justify-items: center;
-        align-items: end;
+        align-items: start;
+        justify-content: center;
+        align-content: space-between;
     }
     .Productos__imagen {
         height: auto;
@@ -645,7 +699,7 @@ label:hover ~ label {
         grid-template-rows: 20% 80% ;
     }
     .Recetas__envoltorio {
-        width: 95%;
+        width: 100%;
         height: 100%;
     }
     .Recetas__grid{
@@ -657,5 +711,28 @@ label:hover ~ label {
         width: 100%;
         height: 100%;
     }
+    .contacto {
+        background-image: url(../img/fondo.jpg);
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem 15rem;
+    }
+    .Recetas__título {
+        margin-bottom: 8%;
+    }
 
+}
+@media screen and (min-width: 1037px){
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+    }
+    .navbar-expand-lg .navbar-nav  {
+        flex-direction: row;
+        column-gap: 12%;
+    }
 }
