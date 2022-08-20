@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,500;1,400&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;1,200&family=Ubuntu:wght@300&display=swap');
+
 html {
     font-size: 62.5%;
 }
@@ -10,16 +11,18 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bolder;
-    display:flex;
+    display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
 }
-header{
+
+header {
     width: 100%;
     height: 100%;
     font-size: large;
@@ -28,7 +31,9 @@ header{
     flex-direction: column;
     align-items: center;
 }
-header, h2 {
+
+header,
+h2 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 100%;
     text-align: center;
@@ -42,16 +47,19 @@ h1 {
     text-align: center;
     color: black;
 }
-a{
+
+a {
     font-family: 'Ubuntu', sans-serif;
     font-size: 100%;
     text-align: center;
     color: black;
 }
+
 article {
     max-width: 100%;
     max-height: 100%;
 }
+
 h2 {
     font-family: 'Ubuntu', sans-serif;
     text-align: left;
@@ -59,50 +67,58 @@ h2 {
     font-size: 2rem;
     font-weight: auto;
 }
+
 p {
     font-family: 'Ubuntu', sans-serif;
     color: black;
 }
+
 img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
-main{
+
+main {
     width: 100%;
     height: 100%;
     justify-content: center;
     margin: 2rem 0rem;
 }
-section{
+
+section {
     height: 100%;
     width: 100%;
 }
-footer { 
+
+footer {
     padding: 10% 0%;
     margin-top: 10%;
     width: 100%;
     height: 100%;
     justify-content: center;
     background-color: #aa998f;
-    background-image: linear-gradient(to bottom,#aa998f, white );
+    background-image: linear-gradient(to bottom, #aa998f, white);
 }
 
-.Header__usuario{
+.Header__usuario {
     height: 100%;
     width: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 .Header__usuario__iconos {
     height: 3rem;
 }
-header{
+
+header {
     margin-top: 0rem;
     margin-bottom: 0rem;
 }
-.logo__usuario__flex{
+
+.logo__usuario__flex {
     width: 96%;
     height: 100%;
     margin-bottom: 10%;
@@ -111,20 +127,24 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.Header__logo__img{
-    height: 6rem;
+
+.Header__logo__img {
+    height: 9rem;
     margin: 0rem 0.5rem;
 }
 
-/*Booststrap*/
+/*Bootstrap*/
+/*Navbar*/
 
-.container-fluid{
+.container-fluid {
     background-color: #cc8b86;
     padding: 1rem 1rem;
 }
-.navbar{
+
+.navbar {
     width: 100%;
 }
+
 .d-flex {
     width: 25rem;
     font-size: 1.5rem;
@@ -139,6 +159,7 @@ header{
     align-content: flex-start;
     align-items: flex-start;
 }
+
 .navbar-nav {
     display: flex;
     flex-direction: column;
@@ -148,32 +169,43 @@ header{
     align-items: flex-start;
     align-content: flex-start;
 }
+
 .nav-link {
     display: block;
     padding: 0.5rem 0rem;
     color: black;
     font-size: 155%;
 }
+
 .me-auto {
     margin-right: 0rem;
 }
-.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
 }
+
 /*Buscador*/
 
 .form-control {
-    font-size: 2rem;
+    font-size: 1rem;
 }
+
 .btn {
     display: inline-block;
     font-weight: 100;
     line-height: 1.5;
-    color:black;
+    color: black;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
@@ -189,23 +221,27 @@ header{
     border-radius: 0.25rem;
 }
 /**/
-.Redes{
+
+.Redes {
     padding: 0%;
     border: 0.4rem solid #7d4f50;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     height: 4rem;
     width: 18rem;
 }
+
 .Redes__iconos {
     height: 100%;
 }
-.Home__portada__grid{
+
+.Home__portada__grid {
     height: 100%;
     width: 100%;
 }
-.Redes__grid{
+
+.Redes__grid {
     width: 100%;
     height: 100%;
     display: flex;
@@ -214,15 +250,18 @@ header{
     align-items: center;
     justify-content: center;
 }
-.Home__Noticias{
+
+.Home__Noticias {
     width: 100%;
     height: 100%;
 }
-.Home__Noticias__img{
-    width: auto; 
+
+.Home__Noticias__img {
+    width: auto;
     height: 70%;
 }
-.Home__Novedades{
+
+.Home__Novedades {
     width: 100%;
     height: 100%;
     background-color: #d1be9c;
@@ -231,7 +270,8 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-.Home__Ofertas{
+
+.Home__Ofertas {
     width: 100%;
     height: 100%;
     background-color: #d1be9c;
@@ -240,7 +280,8 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-.Home__Destacados{
+
+.Home__Destacados {
     width: 100%;
     height: 100%;
     background-color: #d1be9c;
@@ -249,7 +290,8 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-.Home__Publicidad{
+
+.Home__Publicidad {
     width: 100%;
     height: 100%;
     display: flex;
@@ -257,12 +299,13 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-.Publicidad__img{
-    width: auto; 
+
+.Publicidad__img {
+    width: auto;
     height: 40rem;
 }
 
-.Footer__contactos__flex{
+.Footer__contactos__flex {
     width: 100%;
     height: 100%;
     display: flex;
@@ -270,7 +313,8 @@ header{
     align-items: center;
     justify-content: center;
 }
-.Footer__políticas__flex{
+
+.Footer__políticas__flex {
     height: 100%;
     width: 100%;
     font-size: 90%;
@@ -279,36 +323,37 @@ header{
     flex-direction: column;
     align-items: center;
 }
-.Footer__políticas__flex, h3 {
-        padding: 2% 0%;
+
+.Footer__políticas__flex,
+h3 {
+    padding: 2% 0%;
 }
-.Footer__texto{
+
+.Footer__texto {
     width: 60%;
     height: 100%;
     padding: 2% 0%;
 }
-.Footer__img{
+
+.Footer__img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
-.Productos__grid{
+
+.Productos__grid {
     width: 100%;
     height: 10%;
     margin-bottom: 10%;
+    overflow-y: scroll;
 }
-.Productos__flex{
-    width: 70%;
-    height: 10%;
-    margin-bottom: 10%;
-    display: flex;
-    flex-direction: column;
-}
+
 .Productos__imagen {
-    height: auto;
-    width: 60%;
+    height: 18rem;
+    width: 100%;
 }
-.Carrito__iconos{
+
+.Carrito__iconos {
     height: 7%;
 }
 
@@ -329,46 +374,54 @@ header{
 input[type="radio"] {
     display: none;
 }
+
 label {
     color: grey;
 }
-.calificación{
+
+.calificación {
     direction: rtl;
     unicode-bidi: bidi-override;
 }
 
-input[type="radio"]:checked ~ label {
+input[type="radio"]:checked~label {
     color: orange;
 }
-.Home__Recetas__grid{
+
+.Home__Recetas__grid {
     height: 100%;
     width: 100%;
 }
-.Recetas__envoltorio{
+
+.Recetas__envoltorio {
     width: 95%;
     height: 100%;
     margin: 1rem 1rem;
 }
-.Recetas__título{
+
+.Recetas__título {
     width: 100%;
     height: 2%;
     font-size: 2rem;
     margin-bottom: 20%;
 }
 
-.Recetas__grid{
+.Recetas__grid {
     width: 100%;
     height: 10%;
     margin-bottom: 10%;
 }
-.Recetas{
+
+.Recetas {
     width: 90%;
     height: 90%;
 }
-.Receta__iframe{
+
+.Receta__iframe {
     width: 100%;
     height: 100%;
 }
+
 .contacto {
     background-image: url(../img/fondo.jpg);
     width: 100%;
@@ -378,6 +431,7 @@ input[type="radio"]:checked ~ label {
     align-items: center;
     margin: 1rem 0rem;
 }
+
 .Form {
     background-color: #d1be9c;
     padding: 2rem 2rem;
@@ -385,175 +439,206 @@ input[type="radio"]:checked ~ label {
     flex-direction: column;
     align-items: center;
 }
+
 /*Etiquetas grid*/
 
-.logo__usuario__grid{
+.logo__usuario__grid {
     grid-area: Logo__usuario;
 }
-.Home__portada__grid{
+
+.Home__portada__grid {
     grid-area: Portada;
 }
-.Redes__grid{
+
+.Redes__grid {
     grid-area: Redes__grid;
 }
-.Redes{
+
+.Redes {
     grid-area: Redes;
 }
-.Buscador{
+
+.Buscador {
     grid-area: Buscador;
 }
-.Home__Noticias{
+
+.Home__Noticias {
     grid-area: Noticias;
 }
-.Home__Novedades{
+
+.Home__Novedades {
     grid-area: Novedades;
 }
-.Home__Ofertas{
+
+.Home__Ofertas {
     grid-area: Ofertas;
 }
-.Home__Destacados{
+
+.Home__Destacados {
     grid-area: Destacados;
 }
-.Home__Publicidad{
+
+.Home__Publicidad {
     grid-area: Publicidad;
 }
+
 footer {
     grid-area: Footer;
 }
-.Footer__contactos__flex{
+
+.Footer__contactos__flex {
     grid-area: Contactos;
 }
-.Footer__políticas__flex{
+
+.Footer__políticas__flex {
     grid-area: Políticas;
 }
-.Productos__grid{
+
+.Productos__grid {
     grid-area: Productos__grid;
 }
+
 .Productos {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
 }
-.Recetas__envoltorio{
+
+.Recetas__envoltorio {
     grid-area: Recetas__envoltorio;
 }
+
 /*Grillas*/
 
-.Home__portada__grid{
+.Home__portada__grid {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 15% 85%;
-    grid-template-areas: 
-    "Redes__grid"
-    "Noticias";
+    grid-template-areas:
+        "Redes__grid"
+        "Noticias";
     row-gap: 2%;
     justify-items: center;
 }
+
 .Redes__grid {
     width: 22%;
     height: 38%;
     margin: 2rem 0rem;
 }
-.Home__Noticias{
-    display:grid;
+
+.Home__Noticias {
+    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-areas:
-    "Novedades"
-    "Ofertas"
-    "Destacados"
-    "Publicidad";
+        "Novedades"
+        "Ofertas"
+        "Destacados"
+        "Publicidad";
     row-gap: 2%;
     align-content: space-evenly;
     justify-items: center;
 }
-footer{
+
+footer {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 80% 20%;
     row-gap: 12%;
-    grid-template-areas: 
-    "Políticas"   
-    "Contactos";
+    grid-template-areas:
+        "Políticas"
+        "Contactos";
     justify-items: center;
     align-items: center;
     align-content: space-around;
 }
-.Home__productos__grid{
+
+.Home__productos__grid {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 6% 98%;
-    grid-template-areas: 
-    "Redes__grid"
-    "Productos__grid";
+    grid-template-areas:
+        "Redes__grid"
+        "Productos__grid";
     row-gap: 2%;
     justify-items: center;
 }
-.Productos__grid{
+
+.Productos__grid {
     display: grid;
     grid-template-columns: 100%;
     row-gap: 2%;
     justify-items: center;
 }
-.Home__Recetas__grid{
+
+.Home__Recetas__grid {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% 90%;
-    grid-template-areas: 
-    "Redes__grid"
-    "Recetas__envoltorio";
+    grid-template-areas:
+        "Redes__grid"
+        "Recetas__envoltorio";
     row-gap: 1%;
     justify-items: center;
 }
-.Recetas__grid{
+
+.Recetas__grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
 }
 
-
-
 /*Transiciones, transformaciones y animaciones*/
 
-.Header__usuario__iconos:hover{
+.Header__usuario__iconos:hover {
     transform: scale(1.2);
 }
-.nav-item:hover{
+
+.nav-item:hover {
     transform: scale(1.2)
 }
-.Redes__iconos:hover{
+
+.Redes__iconos:hover {
     transform: scale(1.2);
 }
-.Home__Noticias__img:hover{
+
+.Home__Noticias__img:hover {
     transform: scale(1.2);
     transition: 2s transform;
 }
-.Header__logo__img:hover{
+
+.Header__logo__img:hover {
     transform: scale(1.2);
 }
-.Productos__imagen:hover{
+
+.Productos__imagen:hover {
     opacity: 0.5;
 }
+
 label:hover,
-label:hover ~ label {
+label:hover~label {
     color: orange;
 }
 
 /*Media query*/
 
-@media screen and (min-width: 500px){
-    
+@media screen and (min-width: 500px) {
+
     .logo__usuario__grid {
         gap: 68%;
     }
-    .Home__portada__grid{
+
+    .Home__portada__grid {
         row-gap: 1%;
     }
-    footer{
+
+    footer {
         margin: 0%;
     }
+
     .Footer__políticas__flex {
         height: 100%;
         width: 100%;
@@ -562,43 +647,49 @@ label:hover ~ label {
         align-items: center;
         flex-direction: row;
     }
+
     .Footer__texto {
         width: 100%;
         height: 100%;
         padding: 2% 7%;
     }
-    .Home__productos__grid{
+
+    .Home__productos__grid {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 3% 97%;: 
-        row-gap: 2%;
+        grid-template-rows: 3% 97%;
+        :
+            row-gap: 2%;
         justify-items: center;
         height: 80%;
     }
-    .Redes__grid{
+
+    .Redes__grid {
         width: 40%;
     }
-    .Productos__grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    row-gap: 2%;
-    column-gap: 15%;
-    justify-items: center;
-    align-items: start;
-    justify-content: center;
-    align-content: space-between;
+
+    .Productos__grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 2%;
+        column-gap: 0%;
+        justify-items: center;
+        align-items: start;
+        justify-content: center;
+        align-content: space-between;
     }
-    .Productos{
+
+    .Productos {
         height: 40%;
     }
-    .Productos__imagen {
-        height: 50rem;
-    }
-    .Home__Recetas__grid{
+
+
+    .Home__Recetas__grid {
         row-gap: 2%;
-        grid-template-rows: 15% 85% ;
+        grid-template-rows: 15% 85%;
     }
-    .Recetas__grid{
+
+    .Recetas__grid {
         display: grid;
         grid-template-columns: 50% 50%;
         row-gap: 2%;
@@ -608,11 +699,12 @@ label:hover ~ label {
         justify-content: center;
         align-content: space-between;
     }
-    
-    .Recetas{
+
+    .Recetas {
         width: 85%;
         height: 100%;
     }
+
     .contacto {
         background-image: url(../img/fondo.jpg);
         width: 74%;
@@ -623,21 +715,24 @@ label:hover ~ label {
         margin: 5rem 10rem;
     }
 }
-@media screen and (min-width: 768px){
-    
+
+@media screen and (min-width: 768px) {
+
     .Home__grid {
         grid-template-rows: 60% 30%;
     }
+
     .Home__portada__grid {
         grid-template-rows: 10% 90%;
         row-gap: 0%;
         justify-items: center;
         margin: 0% 0%;
     }
-    
-    footer{
+
+    footer {
         margin: 0%;
     }
+
     .Footer__políticas__flex {
         height: 100%;
         width: 100%;
@@ -646,29 +741,33 @@ label:hover ~ label {
         align-items: center;
         flex-direction: row;
     }
+
     .Footer__texto {
         width: 100%;
         height: 100%;
         padding: 2% 7%;
-    } 
-    .Home__Noticias{
-        display:grid;
+    }
+
+    .Home__Noticias {
+        display: grid;
         grid-template-columns: 60% 30%;
-        grid-template-rows: 30% 30% 30% ;
+        grid-template-rows: 30% 30% 30%;
         grid-template-areas:
-        "Novedades  Publicidad"
-        "Ofertas  Publicidad"
-        "Destacados  Publicidad";
+            "Novedades  Publicidad"
+            "Ofertas  Publicidad"
+            "Destacados  Publicidad";
         row-gap: 2%;
-        column-gap: 0rem;    
+        column-gap: 0rem;
         align-content: space-evenly;
         justify-items: center;
         justify-content: space-around;
     }
-    .Publicidad__img{ 
+
+    .Publicidad__img {
         height: 40rem;
     }
-    .Home__Publicidad{
+
+    .Home__Publicidad {
         width: 100%;
         height: 100%;
         display: flex;
@@ -676,41 +775,49 @@ label:hover ~ label {
         align-items: center;
         justify-content: space-around;
     }
-    .Home__productos__grid{
+
+    .Home__productos__grid {
         grid-template-rows: 10% 90%;
         justify-items: center;
         height: 100%;
     }
-    .Productos__grid{
+
+    .Productos__grid {
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        column-gap: 10%;
+        column-gap: 0%;
         justify-items: center;
         align-items: start;
         justify-content: center;
         align-content: space-between;
     }
+
     .Productos__imagen {
         height: auto;
         width: 100%;
     }
-    .Home__Recetas__grid{
+
+    .Home__Recetas__grid {
         row-gap: 2%;
-        grid-template-rows: 20% 80% ;
+        grid-template-rows: 20% 80%;
     }
+
     .Recetas__envoltorio {
         width: 100%;
         height: 100%;
     }
-    .Recetas__grid{
+
+    .Recetas__grid {
         grid-template-columns: 30% 30% 30%;
         row-gap: 32%;
         column-gap: 4%;
     }
-    .Recetas{
+
+    .Recetas {
         width: 100%;
         height: 100%;
     }
+
     .contacto {
         background-image: url(../img/fondo.jpg);
         width: 70%;
@@ -720,18 +827,21 @@ label:hover ~ label {
         align-items: center;
         margin: 5rem 15rem;
     }
+
     .Recetas__título {
         margin-bottom: 8%;
     }
 
 }
-@media screen and (min-width: 1037px){
+
+@media screen and (min-width: 1037px) {
     .navbar-nav {
         display: flex;
         flex-direction: column;
         padding-left: 15px;
     }
-    .navbar-expand-lg .navbar-nav  {
+
+    .navbar-expand-lg .navbar-nav {
         flex-direction: row;
         column-gap: 12%;
     }
