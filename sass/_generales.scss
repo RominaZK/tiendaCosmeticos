@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,500;1,400&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;1,200&family=Ubuntu:wght@300&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+/*Movile first*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header,
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+    font-weight: 200;
+    text-align: center;
+    color: black;
+}
+
+a {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    color: black;
+}
+
+article {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    color: black;
+    font-size: $size;
+    font-weight: auto;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    padding: 10% 0%;
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: #aa998f;
+    background-image: linear-gradient(to bottom, #aa998f, white);
+}
+
+.Header__usuario {
+    height: 100%;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Header__usuario__iconos {
+    height: 3rem;
+}
+
+header {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.logo__usuario__flex {
+    width: 96%;
+    height: 100%;
+    margin-bottom: 10%;
+    margin: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header__logo__img {
+    height: 9rem;
+    margin: 0rem 0.5rem;
+}
+
+/*Bootstrap*/
+/*Navbar*/
+
+.container-fluid {
+    background-color: #cc8b86;
+    padding: 1rem 1rem;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.d-flex {
+    width: 25rem;
+    font-size: 1.5rem;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0rem;
+    color: black;
+    font-size: 155%;
+}
+
+.me-auto {
+    margin-right: 0rem;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+/*Buscador*/
+
+.form-control {
+    font-size: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 100;
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #7d4f50;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.5rem;
+    background-color: #cc8b86;
+    border-radius: 0.25rem;
+}
+/**/
+
+.Redes {
+    padding: 0%;
+    border: 0.4rem solid #7d4f50;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 4rem;
+    width: 18rem;
+}
+
+.Redes__iconos {
+    height: 100%;
+}
+
+.Home__portada__grid {
+    height: 100%;
+    width: 100%;
+}
+
+.Redes__grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home__Noticias {
+    width: 100%;
+    height: 100%;
+}
+
+.Home__Noticias__img {
+    width: auto;
+    height: 70%;
+}
+
+.Home__Novedades {
+    width: 100%;
+    height: 100%;
+    background-color: #d1be9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Home__Ofertas {
+    width: 100%;
+    height: 100%;
+    background-color: #d1be9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Home__Destacados {
+    width: 100%;
+    height: 100%;
+    background-color: #d1be9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Home__Publicidad {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Publicidad__img {
+    width: auto;
+    height: 40rem;
+}
+
+.Footer__contactos__flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footer__políticas__flex {
+    height: 100%;
+    width: 100%;
+    font-size: 90%;
+    font-weight: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Footer__políticas__flex,
+h3 {
+    padding: 2% 0%;
+}
+
+.Footer__texto {
+    width: 60%;
+    height: 100%;
+    padding: 2% 0%;
+}
+
+.Footer__img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.Productos__grid {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10%;
+    overflow-y: scroll;
+}
+
+.Productos__imagen {
+    height: 18rem;
+    width: 100%;
+}
+
+.Carrito__iconos {
+    height: 7%;
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form label {
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: grey;
+}
+
+.calificación {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+input[type="radio"]:checked~label {
+    color: orange;
+}
+
+.Recetas__título {
+    width: 100%;
+    height: 2%;
+    font-size: 2rem;
+    margin-bottom: 20%;
+}
+
+.Recetas__grid {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10%;
+    overflow-y: scroll;
+}
+
+.Recetas {
+    width: 90%;
+    height: 90%;
+}
+
+.Receta__iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contacto {
+    background-image: url(../img/fondo.jpg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+.Form {
+    background-color: #d1be9c;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
