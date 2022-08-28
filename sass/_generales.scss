@@ -18,13 +18,11 @@ body {
     font-weight: bolder;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    @include sizes(100%, 100%);
 }
 
 header {
-    width: 100%;
-    height: 100%;
+    @include sizes(100%, 100%);
     font-size: large;
     justify-content: center;
     display: flex;
@@ -103,10 +101,18 @@ footer {
 
 .Header__usuario {
     height: 100%;
-    width: 5%;
+    width: 15%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    @media screen and (min-width: 500px) {
+        height: 100%;
+        width: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
 
 .Header__usuario__iconos {
@@ -119,13 +125,25 @@ header {
 }
 
 .logo__usuario__flex {
-    width: 96%;
-    height: 100%;
+    @include sizes(100%, 100%);
+    display: grid;
+    grid-template-areas: 
+    "Logo Usuario"
+    "Redes Redes";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 75% 25%;
+    row-gap: 5%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    @media screen and (min-width: 500px) {
+        @include sizes(96%, 100%);
     margin-bottom: 10%;
     margin: 1rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    }
 }
 
 .Header__logo__img {
@@ -240,17 +258,6 @@ header {
     height: 100%;
     width: 100%;
 }
-
-.Redes__grid {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .Home__Noticias {
     width: 100%;
     height: 100%;
@@ -398,7 +405,7 @@ input[type="radio"]:checked~label {
 
 .Recetas {
     width: 90%;
-    height: 90%;
+    height: 100%;
 }
 
 .Receta__iframe {

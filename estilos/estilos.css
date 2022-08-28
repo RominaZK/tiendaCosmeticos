@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*maxins*/
+/*Variables*/
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DynaPuff&display=swap");
 html {
   font-size: 62.5%;
@@ -22,8 +24,8 @@ body {
 }
 
 header {
-  width: 100%;
   height: 100%;
+  width: 100%;
   font-size: large;
   justify-content: center;
   display: flex;
@@ -103,10 +105,20 @@ footer {
 
 .Header__usuario {
   height: 100%;
-  width: 5%;
+  width: 15%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (min-width: 500px) {
+  .Header__usuario {
+    height: 100%;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
 
 .Header__usuario__iconos {
@@ -119,13 +131,27 @@ header {
 }
 
 .logo__usuario__flex {
-  width: 96%;
   height: 100%;
-  margin-bottom: 10%;
-  margin: 1rem 1rem;
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "Logo Usuario" "Redes Redes";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 75% 25%;
+  row-gap: 5%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  justify-items: center;
+}
+@media screen and (min-width: 500px) {
+  .logo__usuario__flex {
+    height: 100%;
+    width: 96%;
+    margin-bottom: 10%;
+    margin: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .Header__logo__img {
@@ -238,16 +264,6 @@ header {
 .Home__portada__grid {
   height: 100%;
   width: 100%;
-}
-
-.Redes__grid {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .Home__Noticias {
@@ -406,7 +422,7 @@ input[type=radio]:checked ~ label {
 
 .Recetas {
   width: 90%;
-  height: 90%;
+  height: 100%;
 }
 
 .Receta__iframe {
@@ -443,6 +459,14 @@ input[type=radio]:checked ~ label {
 
 .Redes__grid {
   grid-area: Redes__grid;
+}
+
+.Header__usuario {
+  grid-area: Usuario;
+}
+
+.Header__logo {
+  grid-area: Logo;
 }
 
 .Redes {
@@ -504,12 +528,6 @@ footer {
   grid-template-areas: "Redes__grid" "Noticias";
   row-gap: 2%;
   justify-items: center;
-}
-
-.Redes__grid {
-  width: 22%;
-  height: 38%;
-  margin: 2rem 0rem;
 }
 
 .Home__Noticias {
@@ -574,7 +592,7 @@ footer {
 .Recetas__grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  row-gap: 10%;
   justify-items: center;
 }
 
@@ -633,8 +651,8 @@ label:hover ~ label {
   }
 
   .Footer__texto {
-    width: 100%;
     height: 100%;
+    width: 100%;
     padding: 2% 7%;
   }
 

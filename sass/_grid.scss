@@ -11,7 +11,12 @@
 .Redes__grid {
     grid-area: Redes__grid;
 }
-
+.Header__usuario{
+    grid-area: Usuario;
+}
+.Header__logo{
+    grid-area: Logo;
+}
 .Redes {
     grid-area: Redes;
 }
@@ -74,11 +79,6 @@ footer {
     justify-items: center;
 }
 
-.Redes__grid {
-    width: 22%;
-    height: 38%;
-    margin: 2rem 0rem;
-}
 
 .Home__Noticias {
     display: grid;
@@ -150,6 +150,6 @@ footer {
 .Recetas__grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    row-gap: 10%;
     justify-items: center;
 }
