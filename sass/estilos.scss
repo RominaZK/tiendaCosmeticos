@@ -128,21 +128,6 @@
         padding: 2% 7%;
     }
 
-    .Home__Noticias {
-        display: grid;
-        grid-template-columns: 60% 30%;
-        grid-template-rows: 30% 30% 30%;
-        grid-template-areas:
-            "Novedades  Publicidad"
-            "Ofertas  Publicidad"
-            "Destacados  Publicidad";
-        row-gap: 2%;
-        column-gap: 0rem;
-        align-content: space-evenly;
-        justify-items: center;
-        justify-content: space-around;
-    }
-
     .Publicidad__img {
         height: 40rem;
     }

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,500;1,400&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;1,200&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DynaPuff&display=swap");
 html {
   font-size: 62.5%;
 }
@@ -13,7 +13,7 @@ html {
 
 body {
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Caveat", cursive;
   font-weight: bolder;
   display: flex;
   flex-direction: column;
@@ -33,22 +33,22 @@ header {
 
 header,
 h2 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Caveat", cursive;
   font-size: 100%;
   text-align: center;
   color: black;
 }
 
 h1 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 100%;
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
   font-weight: 200;
   text-align: center;
   color: black;
 }
 
 a {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Caveat", cursive;
   font-size: 100%;
   text-align: center;
   color: black;
@@ -60,7 +60,7 @@ article {
 }
 
 h2 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Caveat", cursive;
   text-align: left;
   color: black;
   font-size: 2rem;
@@ -129,7 +129,7 @@ header {
 }
 
 .Header__logo__img {
-  height: 9rem;
+  height: 13rem;
   margin: 0rem 0.5rem;
 }
 
@@ -260,48 +260,40 @@ header {
   height: 70%;
 }
 
-.Home__Novedades {
-  width: 100%;
-  height: 100%;
-  background-color: #d1be9c;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.Home__Ofertas {
-  width: 100%;
-  height: 100%;
-  background-color: #d1be9c;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.Home__Destacados {
-  width: 100%;
-  height: 100%;
-  background-color: #d1be9c;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .Home__Publicidad {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+@media screen and (min-width: 768px) {
+  .Home__Publicidad {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: hidden;
+  }
 }
 
 .Publicidad__img {
+  height: 60rem;
+  flex: 0 0 100%;
+  width: 100%;
+  scroll-snap-align: center;
+}
+@media screen and (min-width: 768px) {
+  .Publicidad__img {
+    height: 20rem;
+    flex: 30 30 30%;
+    scroll-snap-align: none;
+  }
+}
+
+.Certificación__img {
   width: auto;
-  height: 40rem;
+  height: 70%;
 }
 
 .Footer__contactos__flex {
@@ -353,8 +345,18 @@ h3 {
   width: 100%;
 }
 
+.card-title {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  font-weight: 200;
+}
+
 .Carrito__iconos {
   height: 7%;
+}
+
+p.card-text {
+  color: darkslategrey;
 }
 
 #form {
@@ -455,16 +457,12 @@ input[type=radio]:checked ~ label {
   grid-area: Noticias;
 }
 
-.Home__Novedades {
-  grid-area: Novedades;
+#carouselExampleCaptions {
+  grid-area: Carrusel;
 }
 
-.Home__Ofertas {
-  grid-area: Ofertas;
-}
-
-.Home__Destacados {
-  grid-area: Destacados;
+.Home__certificación {
+  grid-area: Certificación;
 }
 
 .Home__Publicidad {
@@ -517,11 +515,24 @@ footer {
 .Home__Noticias {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 20% 20% 20% 20%;
-  grid-template-areas: "Novedades" "Ofertas" "Destacados" "Publicidad";
+  grid-template-rows: 30% 30% 30%;
+  grid-template-areas: "Carrusel" "Publicidad" "Certificación";
   row-gap: 2%;
   align-content: space-evenly;
   justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .Home__Noticias {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "Carrusel  Publicidad" "Certificación Publicidad";
+    -moz-column-gap: 0rem;
+         column-gap: 0rem;
+    align-content: space-evenly;
+    justify-items: center;
+    justify-content: space-around;
+  }
 }
 
 footer {
@@ -603,12 +614,15 @@ label:hover ~ label {
   .logo__usuario__grid {
     gap: 68%;
   }
+
   .Home__portada__grid {
     row-gap: 1%;
   }
+
   footer {
     margin: 0%;
   }
+
   .Footer__políticas__flex {
     height: 100%;
     width: 100%;
@@ -617,11 +631,13 @@ label:hover ~ label {
     align-items: center;
     flex-direction: row;
   }
+
   .Footer__texto {
     width: 100%;
     height: 100%;
     padding: 2% 7%;
   }
+
   .Home__productos__grid {
     display: grid;
     grid-template-columns: 100%;
@@ -630,9 +646,11 @@ label:hover ~ label {
     justify-items: center;
     height: 80%;
   }
+
   .Redes__grid {
     width: 40%;
   }
+
   .Productos__grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -644,13 +662,16 @@ label:hover ~ label {
     justify-content: center;
     align-content: space-between;
   }
+
   .Productos {
     height: 40%;
   }
+
   .Home__Recetas__grid {
     row-gap: 2%;
     grid-template-rows: 15% 85%;
   }
+
   .Recetas__grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -662,10 +683,12 @@ label:hover ~ label {
     justify-content: center;
     align-content: space-between;
   }
+
   .Recetas {
     width: 85%;
     height: 100%;
   }
+
   .contacto {
     background-image: url(../img/fondo.jpg);
     width: 74%;
@@ -680,15 +703,18 @@ label:hover ~ label {
   .Home__grid {
     grid-template-rows: 60% 30%;
   }
+
   .Home__portada__grid {
     grid-template-rows: 10% 90%;
     row-gap: 0%;
     justify-items: center;
     margin: 0% 0%;
   }
+
   footer {
     margin: 0%;
   }
+
   .Footer__políticas__flex {
     height: 100%;
     width: 100%;
@@ -697,26 +723,17 @@ label:hover ~ label {
     align-items: center;
     flex-direction: row;
   }
+
   .Footer__texto {
     width: 100%;
     height: 100%;
     padding: 2% 7%;
   }
-  .Home__Noticias {
-    display: grid;
-    grid-template-columns: 60% 30%;
-    grid-template-rows: 30% 30% 30%;
-    grid-template-areas: "Novedades  Publicidad" "Ofertas  Publicidad" "Destacados  Publicidad";
-    row-gap: 2%;
-    -moz-column-gap: 0rem;
-         column-gap: 0rem;
-    align-content: space-evenly;
-    justify-items: center;
-    justify-content: space-around;
-  }
+
   .Publicidad__img {
     height: 40rem;
   }
+
   .Home__Publicidad {
     width: 100%;
     height: 100%;
@@ -725,11 +742,13 @@ label:hover ~ label {
     align-items: center;
     justify-content: space-around;
   }
+
   .Home__productos__grid {
     grid-template-rows: 10% 90%;
     justify-items: center;
     height: 100%;
   }
+
   .Productos__grid {
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -740,28 +759,34 @@ label:hover ~ label {
     justify-content: center;
     align-content: space-between;
   }
+
   .Productos__imagen {
     height: auto;
     width: 100%;
   }
+
   .Home__Recetas__grid {
     row-gap: 2%;
     grid-template-rows: 20% 80%;
   }
+
   .Recetas__envoltorio {
     width: 100%;
     height: 100%;
   }
+
   .Recetas__grid {
     grid-template-columns: 30% 30% 30%;
     row-gap: 32%;
     -moz-column-gap: 4%;
          column-gap: 4%;
   }
+
   .Recetas {
     width: 100%;
     height: 100%;
   }
+
   .contacto {
     background-image: url(../img/fondo.jpg);
     width: 70%;
@@ -771,6 +796,7 @@ label:hover ~ label {
     align-items: center;
     margin: 5rem 15rem;
   }
+
   .Recetas__título {
     margin-bottom: 8%;
   }
@@ -781,6 +807,7 @@ label:hover ~ label {
     flex-direction: column;
     padding-left: 15px;
   }
+
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
     -moz-column-gap: 12%;

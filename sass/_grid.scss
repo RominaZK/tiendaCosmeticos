@@ -24,18 +24,12 @@
     grid-area: Noticias;
 }
 
-.Home__Novedades {
-    grid-area: Novedades;
+#carouselExampleCaptions {
+    grid-area: Carrusel;
 }
-
-.Home__Ofertas {
-    grid-area: Ofertas;
+.Home__certificación{
+    grid-area: Certificación;
 }
-
-.Home__Destacados {
-    grid-area: Destacados;
-}
-
 .Home__Publicidad {
     grid-area: Publicidad;
 }
@@ -89,15 +83,26 @@ footer {
 .Home__Noticias {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-rows: 30% 30% 30%;
     grid-template-areas:
-        "Novedades"
-        "Ofertas"
-        "Destacados"
-        "Publicidad";
+        "Carrusel"
+        "Publicidad"
+        "Certificación";
     row-gap: 2%;
     align-content: space-evenly;
     justify-items: center;
+    @media screen and (min-width: 768px){
+        display: grid;
+        grid-template-columns: 60% 30%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "Carrusel  Publicidad"
+        "Certificación Publicidad";
+        column-gap: 0rem;
+        align-content: space-evenly;
+        justify-items: center;
+        justify-content: space-around;
+    }
 }
 
 footer {
