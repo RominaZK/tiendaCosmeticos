@@ -62,9 +62,6 @@ footer {
     align-items: center;
 }
 
-.Recetas__envoltorio {
-    grid-area: Recetas__envoltorio;
-}
 
 /*Grillas*/
 
@@ -77,6 +74,15 @@ footer {
         "Noticias";
     row-gap: 2%;
     justify-items: center;
+    @media screen and (min-width: 500px){
+        row-gap: 1%;
+    }
+    @media screen and (min-width: 768px){
+        grid-template-rows: 10% 90%;
+        row-gap: 0%;
+        justify-items: center;
+        margin: 0% 0%;
+    }
 }
 
 
@@ -127,6 +133,19 @@ footer {
         "Productos__grid";
     row-gap: 2%;
     justify-items: center;
+    @media screen and (min-width:500px)  {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 3% 97%;
+        row-gap: 2%;
+        justify-items: center;
+        height: 80%;
+    }
+    @media screen and (min-width: 768px){
+        grid-template-rows: 10% 90%;
+        justify-items: center;
+        height: 100%;
+    }
 }
 
 .Productos__grid {
@@ -134,17 +153,25 @@ footer {
     grid-template-columns: 100%;
     row-gap: 2%;
     justify-items: center;
-}
-
-.Home__Recetas__grid {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 90%;
-    grid-template-areas:
-        "Redes__grid"
-        "Recetas__envoltorio";
-    row-gap: 1%;
-    justify-items: center;
+    @media screen and (min-width:500px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 2%;
+        column-gap: 0%;
+        justify-items: center;
+        align-items: start;
+        justify-content: center;
+        align-content: space-between;
+    }
+    @media screen and (min-width:768px) {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 0%;
+        justify-items: center;
+        align-items: start;
+        justify-content: center;
+        align-content: space-between;
+    }
 }
 
 .Recetas__grid {
@@ -152,4 +179,20 @@ footer {
     grid-template-columns: 1fr;
     row-gap: 10%;
     justify-items: center;
+    @media screen and (min-width:500px) {
+        width: 40%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 2%;
+        column-gap: 2%;
+        justify-items: center;
+        align-items: start;
+        justify-content: center;
+        align-content: space-between;
+    }
+    @media screen and (min-width:768px){
+        grid-template-columns: 30% 30% 30%;
+        row-gap: 32%;
+        column-gap: 4%;
+    }
 }
