@@ -1,0 +1,16 @@
+/*maxins*/
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+/*Extends*/
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}

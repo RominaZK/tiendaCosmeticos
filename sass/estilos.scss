@@ -1,9 +1,5 @@
-/*maxins*/
-@mixin sizes($width, $height) {
-    height: $height;
-    width: $width;
-}
 @import "variables";
+@import "operaciones";
 @import "generales";
 @import "navbar";
 @import "grid";

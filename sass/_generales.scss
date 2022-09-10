@@ -25,8 +25,7 @@ header {
     @include sizes(100%, 100%);
     font-size: large;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
+    @extend .flexColumn;
     align-items: center;
 }
 
@@ -80,15 +79,13 @@ main {
 }
 
 section {
-    height: 100%;
-    width: 100%;
+    @include sizes(100%, 100%);
 }
 
 footer {
     padding: 10% 0%;
     margin-top: 10%;
-    width: 100%;
-    height: 100%;
+    @include sizes(100%, 100%);
     justify-content: center;
     background-color: #aa998f;
     background-image: linear-gradient(to bottom, #aa998f, white);
@@ -99,16 +96,14 @@ footer {
 }
 
 .Header__usuario {
-    height: 100%;
-    width: 15%;
+    @include sizes(15%, 100%);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 
     @media screen and (min-width: 500px) {
-        height: 100%;
-        width: 5%;
+        @include sizes(5%, 100%);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -168,13 +163,11 @@ header {
 }
 
 .Home__portada__grid {
-    height: 100%;
-    width: 100%;
+    @include sizes(100%, 100%);
 }
 
 .Home__Noticias {
-    width: 100%;
-    height: 100%;
+    @include sizes(100, 100%);
 }
 
 .Home__Noticias__img {
@@ -184,12 +177,12 @@ header {
 
 .Home__Publicidad {
     display: flex;
-    width: 100%;
-    height: 100%;
+    @include sizes(100, 100%);
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
 
     @media screen and (min-width: 768px) {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -219,8 +212,7 @@ header {
 .Footer__contactos__flex {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
+    @extend .flexRow;
     align-items: center;
     justify-content: center;
 
@@ -238,8 +230,7 @@ header {
     width: 100%;
     font-size: 90%;
     font-weight: 100%;
-    display: flex;
-    flex-direction: column;
+    @extend .flexColumn;
     align-items: center;
 
     @media screen and (min-width: 768px) {
@@ -268,8 +259,7 @@ h3 {
     }
 
     @media screen and (min-width: 768px) {
-        width: 100%;
-        height: 100%;
+        @include sizes(100%, 100%);
         padding: 2% 7%;
     }
 }
@@ -281,8 +271,7 @@ h3 {
 }
 
 .Productos__grid {
-    width: 100%;
-    height: 10%;
+    @include sizes(100%, 10%);
     margin-bottom: 10%;
     overflow-y: scroll;
 }
@@ -349,43 +338,38 @@ input[type="radio"]:checked~label {
 }
 
 .Recetas__grid {
-    width: 100%;
-    height: 10%;
+    @include sizes(100%, 100%);
     margin-bottom: 10%;
     overflow-y: scroll;
-}
-
-.Recetas {
-    width: 90%;
-    height: 100%;
-
-    @media screen and (min-width:500px) {
-        width: 85%;
-        height: 100%;
+    .Recetas {
+        @include sizes(90%, 100%);
+        @media screen and (min-width:500px) {
+            width: 85%;
+            height: 100%;
+        }
+    
+        @media screen and (min-width:768px) {
+            @include sizes(100%, 100%);
+        }
+        .Receta__iframe {
+            @include sizes(100%, 100%)
+        }
     }
-
-    @media screen and (min-width:768px) {
-        width: 85%;
-        height: 100%;
-    }
 }
 
-.Receta__iframe {
-    width: 100%;
-    height: 100%;
-}
+
+
+
 
 .contacto__flex {
-    display: flex;
-    flex-direction: column;
+    @extend .flexColumn;
     align-items: center;
 
     .contacto {
         background-image: url(../img/fondo.jpg);
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
+        @extend .flexColumn;
         align-items: center;
         margin: 1rem 0rem;
 
@@ -394,21 +378,16 @@ input[type="radio"]:checked~label {
             background-image: url(../img/fondo.jpg);
             background-repeat: no-repeat;
             background-image: image(center);
-            width: 70%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include sizes(70%, 100%);
             margin: 5rem 0rem;
         }
     }
 }
 
 .Form {
-    background-color: #d1be9c;
+    background-color: $color1;
     padding: 2rem 2rem;
-    display: flex;
-    flex-direction: column;
+    @extend .flexColumn;
     align-items: center;
 
     h5 {
