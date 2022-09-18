@@ -175,6 +175,17 @@ header {
     height: 70%;
 }
 
+.Home__título {
+    width: 100%;
+    height: 2%;
+    font-size: 3rem;
+    margin: 10% 0%;
+
+    @media screen and (min-width:766px) {
+        margin: 5% 0% 10% 0%;
+    }
+}
+
 .Home__Publicidad {
     display: flex;
     @include sizes(100, 100%);
@@ -329,11 +340,11 @@ input[type="radio"]:checked~label {
 .Recetas__título {
     width: 100%;
     height: 2%;
-    font-size: 2rem;
-    margin-bottom: 20%;
+    font-size: 3rem;
+    margin: 10% 0%;
 
-    @media screen and (min-width:768px) {
-        margin-bottom: 8%;
+    @media screen and (min-width:766px) {
+        margin: 5% 0% 10% 0%;
     }
 }
 
@@ -341,66 +352,101 @@ input[type="radio"]:checked~label {
     @include sizes(100%, 100%);
     margin-bottom: 10%;
     overflow-y: scroll;
+
     .Recetas {
         @include sizes(90%, 100%);
+
         @media screen and (min-width:500px) {
             width: 85%;
             height: 100%;
         }
-    
+
         @media screen and (min-width:768px) {
             @include sizes(100%, 100%);
         }
+
         .Receta__iframe {
             @include sizes(100%, 100%)
         }
     }
 }
 
-
-
-
-
 .contacto__flex {
     @extend .flexColumn;
     align-items: center;
 
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: row;
+        margin: 0% 0%;
+    }
+
     .contacto {
-        background-image: url(../img/fondo.jpg);
         width: 100%;
         height: 100%;
         @extend .flexColumn;
         align-items: center;
         margin: 1rem 0rem;
 
-
         @media screen and (min-width:500px) {
-            background-image: url(../img/fondo.jpg);
-            background-repeat: no-repeat;
-            background-image: image(center);
             @include sizes(70%, 100%);
-            margin: 5rem 0rem;
+            margin: 5rem 3rem;
         }
+    }
+
+    .map {
+        @include sizes(100%, 100%);
+
+        iframe {
+            width: 80%;
+            height: 100%;
+
+            @media screen and (min-width:500px) {
+                width: 80%;
+                height: 26rem;
+            }
+
+            @media screen and (min-width:768px) {
+                width: 80%;
+                height: 54rem;
+            }
+
+        }
+    }
+
+    iframe {
+        width: 80%;
+        height: 54rem;
+
+
     }
 }
 
 .Form {
     background-color: $color1;
-    padding: 2rem 2rem;
+    padding: 2rem 7rem;
     @extend .flexColumn;
     align-items: center;
+
+    h2 {
+        font-size: 3rem;
+    }
 
     h5 {
         font-size: 2rem;
     }
 
     input {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     @media screen and (min-width:768px) {
         padding: 2rem 8rem;
     }
+}
+
+textarea.form-control {
+    min-height: calc(1.5em + 6.75rem + 2px);
 }
 
 #contacto {

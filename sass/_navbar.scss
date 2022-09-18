@@ -83,7 +83,11 @@
 /*Buscador*/
 
 .form-control {
-    font-size: $Fsize*(2/3);
+    font-size: $Fsize*(4/3);
+}
+button:not(:disabled) {
+    cursor: pointer;
+    font-size: 2rem;
 }
 
 .btn {
